@@ -1,0 +1,73 @@
+/* Estilos para el popup */
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 80%; /* Ancho del popup */
+    max-width: 800px; /* Ancho máximo */
+    height: 70%; /* Altura del popup */
+    max-height: 80vh; /* Altura máxima */
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Contenedor de la tabla con scroll */
+.table-container {
+    max-height: calc(100% - 100px); /* Ajusta la altura para dejar espacio para el formulario y botones */
+    overflow-y: auto; /* Habilita el scroll vertical */
+    margin-top: 20px;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Fondo oscuro cuando el popup está activo */
+.popup-overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Botones */
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Ajustes del formulario */
+.form-container {
+    margin-bottom: 20px;
+}
